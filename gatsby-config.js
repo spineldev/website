@@ -3,8 +3,10 @@ const path = require(`path`)
 module.exports = {
   flags: {
     FAST_DEV: true,
-    PRESERVE_WEBPACK_CACHE: true,
+    PARALLEL_QUERY_RUNNING: false,
     PRESERVE_FILE_DOWNLOAD_CACHE: true,
+    PARALLEL_SOURCING: true,
+    LMDB_STORE: true,
   },
   siteMetadata: {
     title: `Spinel Hydrualika-Pneumatyka`,
@@ -13,6 +15,14 @@ module.exports = {
   plugins: [
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-plugin-sharp`,
+      options: {
+        defaults: {
+          formats: [`auto`, `webp`, `avif`],
+        }
+      }
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-react-helmet`,
     {

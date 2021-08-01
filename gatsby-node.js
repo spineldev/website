@@ -1,5 +1,4 @@
 const path = require(`path`)
-const slash = require(`slash`)
 const cheerio = require(`cheerio`)
 
 exports.createPages = async ({ graphql, actions }) => {
@@ -26,7 +25,7 @@ exports.createPages = async ({ graphql, actions }) => {
   result.data.allWpPost.nodes.forEach(node => {
     createPage({
       path: `/blog/${node.slug}`,
-      component: slash(postTemplate),
+      component: postTemplate,
       context: {
         id: node.id,
       },
@@ -36,7 +35,7 @@ exports.createPages = async ({ graphql, actions }) => {
   result.data.allWpPage.nodes.forEach(node => {
     createPage({
       path: node.uri,
-      component: slash(pageTemplate),
+      component: pageTemplate,
       context: {
         id: node.id,
       },

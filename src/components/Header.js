@@ -7,14 +7,12 @@ const Header = ({ siteTitle, isFrontPage }) => {
       query {
         bg: file(relativePath: { eq: "headbg.png" }) {
           childImageSharp {
-            fluid(maxWidth: 998) {
-              ...GatsbyImageSharpFluid
-            }
+            gatsbyImageData(layout: CONSTRAINED, width: 998)
           }
         }
       }
   `)
-  const imageData = data.bg.childImageSharp.fluid
+  const imageData = data.bg.childImageSharp.gatsbyImageData
   return (
     <BackgroundImage
       Tag="header"

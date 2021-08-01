@@ -8,17 +8,17 @@ const AuthorizedService = () => {
     query {
       baer: file(relativePath: { eq: "baer.png" }) {
         childImageSharp {
-          gatsbyImageData(layout: FIXED, formats: [AUTO, WEBP, AVIF], width: 119, height: 58, placeholder: TRACED_SVG)
+          gatsbyImageData(layout: FIXED, width: 119, height: 58, placeholder: TRACED_SVG)
         }
       }
       dhollandia: file(relativePath: { eq: "dhollandia.png" }) {
         childImageSharp {
-          gatsbyImageData(layout: FIXED, formats: [AUTO, WEBP, AVIF], width: 150, height: 58, placeholder: TRACED_SVG)
+          gatsbyImageData(layout: FIXED, width: 150, height: 58, placeholder: TRACED_SVG)
         }
       }
       dautel: file(relativePath: { eq: "dautel.png" }) {
         childImageSharp {
-          gatsbyImageData(layout: FIXED, formats: [AUTO, WEBP, AVIF], width: 150, height: 55, placeholder: TRACED_SVG)
+          gatsbyImageData(layout: FIXED, width: 150, height: 55, placeholder: TRACED_SVG)
         }
       }
     }
