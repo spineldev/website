@@ -593,5 +593,8 @@ main h3 {
 	}
 }
 
+main [id], main [name] {
+	scroll-margin-top: 80px;
+}
 
 @import './wordpress.scss'
