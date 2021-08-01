@@ -26,6 +26,10 @@ h1, h2, h3, h4 {
 	padding: 5px;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
   color: rgba(0,0,0,.8);
   font: 14px/21px 'Source Sans Pro', Arial, sans-serif;
