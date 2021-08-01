@@ -41,7 +41,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@fortawesome/react-fontawesome", "virtual:65a1ef21d93c1457baec22462b13fb26dd12c3ef4dabd53a822c32ec39f4fc72f595142ec34b12f0106bec039453140ee7748c04c3f8e076e7870f592b307409#npm:0.1.14"],
             ["cheerio", "npm:1.0.0-rc.10"],
             ["gatsby", "virtual:65a1ef21d93c1457baec22462b13fb26dd12c3ef4dabd53a822c32ec39f4fc72f595142ec34b12f0106bec039453140ee7748c04c3f8e076e7870f592b307409#npm:3.10.2"],
-            ["gatsby-background-image", "virtual:65a1ef21d93c1457baec22462b13fb26dd12c3ef4dabd53a822c32ec39f4fc72f595142ec34b12f0106bec039453140ee7748c04c3f8e076e7870f592b307409#npm:1.5.3"],
             ["gatsby-plugin-catch-links", "virtual:65a1ef21d93c1457baec22462b13fb26dd12c3ef4dabd53a822c32ec39f4fc72f595142ec34b12f0106bec039453140ee7748c04c3f8e076e7870f592b307409#npm:3.10.0"],
             ["gatsby-plugin-google-analytics", "virtual:65a1ef21d93c1457baec22462b13fb26dd12c3ef4dabd53a822c32ec39f4fc72f595142ec34b12f0106bec039453140ee7748c04c3f8e076e7870f592b307409#npm:3.10.0"],
             ["gatsby-plugin-image", "virtual:65a1ef21d93c1457baec22462b13fb26dd12c3ef4dabd53a822c32ec39f4fc72f595142ec34b12f0106bec039453140ee7748c04c3f8e076e7870f592b307409#npm:1.10.1"],
@@ -10465,16 +10464,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
-      ["filter-invalid-dom-props", [
-        ["npm:2.0.0", {
-          "packageLocation": "./.yarn/cache/filter-invalid-dom-props-npm-2.0.0-cf2519c18e-9082d194e4.zip/node_modules/filter-invalid-dom-props/",
-          "packageDependencies": [
-            ["filter-invalid-dom-props", "npm:2.0.0"],
-            ["html-attributes", "npm:1.1.0"]
-          ],
-          "linkType": "HARD",
-        }]
-      ]],
       ["filter-obj", [
         ["npm:1.1.0", {
           "packageLocation": "./.yarn/cache/filter-obj-npm-1.1.0-84128fc26d-cf2104a7c4.zip/node_modules/filter-obj/",
@@ -11026,41 +11015,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packagePeers": [
             "@types/react-dom",
             "@types/react",
-            "react-dom",
-            "react"
-          ],
-          "linkType": "HARD",
-        }]
-      ]],
-      ["gatsby-background-image", [
-        ["npm:1.5.3", {
-          "packageLocation": "./.yarn/cache/gatsby-background-image-npm-1.5.3-0297308e64-940d056a22.zip/node_modules/gatsby-background-image/",
-          "packageDependencies": [
-            ["gatsby-background-image", "npm:1.5.3"]
-          ],
-          "linkType": "SOFT",
-        }],
-        ["virtual:65a1ef21d93c1457baec22462b13fb26dd12c3ef4dabd53a822c32ec39f4fc72f595142ec34b12f0106bec039453140ee7748c04c3f8e076e7870f592b307409#npm:1.5.3", {
-          "packageLocation": "./.yarn/__virtual__/gatsby-background-image-virtual-4bf75807d5/0/cache/gatsby-background-image-npm-1.5.3-0297308e64-940d056a22.zip/node_modules/gatsby-background-image/",
-          "packageDependencies": [
-            ["gatsby-background-image", "virtual:65a1ef21d93c1457baec22462b13fb26dd12c3ef4dabd53a822c32ec39f4fc72f595142ec34b12f0106bec039453140ee7748c04c3f8e076e7870f592b307409#npm:1.5.3"],
-            ["@babel/runtime", "npm:7.14.8"],
-            ["@types/gatsby", null],
-            ["@types/react", null],
-            ["@types/react-dom", null],
-            ["filter-invalid-dom-props", "npm:2.0.0"],
-            ["gatsby", "virtual:65a1ef21d93c1457baec22462b13fb26dd12c3ef4dabd53a822c32ec39f4fc72f595142ec34b12f0106bec039453140ee7748c04c3f8e076e7870f592b307409#npm:3.10.2"],
-            ["global", "npm:4.4.0"],
-            ["react", "npm:17.0.2"],
-            ["react-dom", "virtual:65a1ef21d93c1457baec22462b13fb26dd12c3ef4dabd53a822c32ec39f4fc72f595142ec34b12f0106bec039453140ee7748c04c3f8e076e7870f592b307409#npm:17.0.2"],
-            ["short-uuid", "npm:4.2.0"],
-            ["sort-media-queries", "npm:0.2.2"]
-          ],
-          "packagePeers": [
-            "@types/gatsby",
-            "@types/react-dom",
-            "@types/react",
-            "gatsby",
             "react-dom",
             "react"
           ],
@@ -12839,15 +12793,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/hsla-regex-npm-1.0.0-f9d795def9-9aa6eb9ff6.zip/node_modules/hsla-regex/",
           "packageDependencies": [
             ["hsla-regex", "npm:1.0.0"]
-          ],
-          "linkType": "HARD",
-        }]
-      ]],
-      ["html-attributes", [
-        ["npm:1.1.0", {
-          "packageLocation": "./.yarn/cache/html-attributes-npm-1.1.0-0dbb2fba46-0c242d637e.zip/node_modules/html-attributes/",
-          "packageDependencies": [
-            ["html-attributes", "npm:1.1.0"]
           ],
           "linkType": "HARD",
         }]
@@ -20321,17 +20266,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
-      ["short-uuid", [
-        ["npm:4.2.0", {
-          "packageLocation": "./.yarn/cache/short-uuid-npm-4.2.0-1a4d4951b9-0901355939.zip/node_modules/short-uuid/",
-          "packageDependencies": [
-            ["short-uuid", "npm:4.2.0"],
-            ["any-base", "npm:1.1.0"],
-            ["uuid", "npm:8.3.2"]
-          ],
-          "linkType": "HARD",
-        }]
-      ]],
       ["side-channel", [
         ["npm:1.0.4", {
           "packageLocation": "./.yarn/cache/side-channel-npm-1.0.4-e1f38b9e06-351e41b947.zip/node_modules/side-channel/",
@@ -20627,16 +20561,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
-      ["sort-media-queries", [
-        ["npm:0.2.2", {
-          "packageLocation": "./.yarn/cache/sort-media-queries-npm-0.2.2-ae39ad38ee-1bd7d9fba2.zip/node_modules/sort-media-queries/",
-          "packageDependencies": [
-            ["sort-media-queries", "npm:0.2.2"],
-            ["xtend", "npm:4.0.2"]
-          ],
-          "linkType": "HARD",
-        }]
-      ]],
       ["source-list-map", [
         ["npm:2.0.1", {
           "packageLocation": "./.yarn/cache/source-list-map-npm-2.0.1-625c551052-806efc6f75.zip/node_modules/source-list-map/",
@@ -20792,7 +20716,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@fortawesome/react-fontawesome", "virtual:65a1ef21d93c1457baec22462b13fb26dd12c3ef4dabd53a822c32ec39f4fc72f595142ec34b12f0106bec039453140ee7748c04c3f8e076e7870f592b307409#npm:0.1.14"],
             ["cheerio", "npm:1.0.0-rc.10"],
             ["gatsby", "virtual:65a1ef21d93c1457baec22462b13fb26dd12c3ef4dabd53a822c32ec39f4fc72f595142ec34b12f0106bec039453140ee7748c04c3f8e076e7870f592b307409#npm:3.10.2"],
-            ["gatsby-background-image", "virtual:65a1ef21d93c1457baec22462b13fb26dd12c3ef4dabd53a822c32ec39f4fc72f595142ec34b12f0106bec039453140ee7748c04c3f8e076e7870f592b307409#npm:1.5.3"],
             ["gatsby-plugin-catch-links", "virtual:65a1ef21d93c1457baec22462b13fb26dd12c3ef4dabd53a822c32ec39f4fc72f595142ec34b12f0106bec039453140ee7748c04c3f8e076e7870f592b307409#npm:3.10.0"],
             ["gatsby-plugin-google-analytics", "virtual:65a1ef21d93c1457baec22462b13fb26dd12c3ef4dabd53a822c32ec39f4fc72f595142ec34b12f0106bec039453140ee7748c04c3f8e076e7870f592b307409#npm:3.10.0"],
             ["gatsby-plugin-image", "virtual:65a1ef21d93c1457baec22462b13fb26dd12c3ef4dabd53a822c32ec39f4fc72f595142ec34b12f0106bec039453140ee7748c04c3f8e076e7870f592b307409#npm:1.10.1"],
@@ -22666,13 +22589,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/uuid-npm-3.4.0-4fd8ef88ad-58de2feed6.zip/node_modules/uuid/",
           "packageDependencies": [
             ["uuid", "npm:3.4.0"]
-          ],
-          "linkType": "HARD",
-        }],
-        ["npm:8.3.2", {
-          "packageLocation": "./.yarn/cache/uuid-npm-8.3.2-eca0baba53-5575a8a75c.zip/node_modules/uuid/",
-          "packageDependencies": [
-            ["uuid", "npm:8.3.2"]
           ],
           "linkType": "HARD",
         }]

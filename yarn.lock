@@ -1400,7 +1400,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/runtime@npm:^7.10.0, @babel/runtime@npm:^7.10.2, @babel/runtime@npm:^7.11.2, @babel/runtime@npm:^7.13.17, @babel/runtime@npm:^7.14.0, @babel/runtime@npm:^7.14.6, @babel/runtime@npm:^7.3.1, @babel/runtime@npm:^7.3.4, @babel/runtime@npm:^7.7.2, @babel/runtime@npm:^7.8.4, @babel/runtime@npm:^7.9.2":
+"@babel/runtime@npm:^7.10.0, @babel/runtime@npm:^7.10.2, @babel/runtime@npm:^7.11.2, @babel/runtime@npm:^7.14.0, @babel/runtime@npm:^7.14.6, @babel/runtime@npm:^7.3.1, @babel/runtime@npm:^7.3.4, @babel/runtime@npm:^7.7.2, @babel/runtime@npm:^7.8.4, @babel/runtime@npm:^7.9.2":
   version: 7.14.8
   resolution: "@babel/runtime@npm:7.14.8"
   dependencies:
@@ -7679,15 +7679,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"filter-invalid-dom-props@npm:^2.0.0":
-  version: 2.0.0
-  resolution: "filter-invalid-dom-props@npm:2.0.0"
-  dependencies:
-    html-attributes: 1.1.0
-  checksum: 9082d194e49e7ab022b377540c41abdca2eed99b41b183e61dd88bccb9d9c5bf05a9ea5ff48ed10ec18e16e96edc99b3fb3387027381c692a84c4b386da708f7
-  languageName: node
-  linkType: hard
-
 "filter-obj@npm:^1.1.0":
   version: 1.1.0
   resolution: "filter-obj@npm:1.1.0"
@@ -8019,23 +8010,6 @@ fsevents@~2.3.2:
   version: 1.0.1
   resolution: "functional-red-black-tree@npm:1.0.1"
   checksum: ca6c170f37640e2d94297da8bb4bf27a1d12bea3e00e6a3e007fd7aa32e37e000f5772acf941b4e4f3cf1c95c3752033d0c509af157ad8f526e7f00723b9eb9f
-  languageName: node
-  linkType: hard
-
-"gatsby-background-image@npm:^1.5.3":
-  version: 1.5.3
-  resolution: "gatsby-background-image@npm:1.5.3"
-  dependencies:
-    "@babel/runtime": ^7.13.17
-    filter-invalid-dom-props: ^2.0.0
-    global: ^4.4.0
-    short-uuid: ^4.1.0
-    sort-media-queries: ^0.2.2
-  peerDependencies:
-    gatsby: ^2.0.0 || ^3.0.0
-    react: ">=16.x"
-    react-dom: ">=16.x"
-  checksum: 940d056a220ce426693deb1aeb69ed46eab51da5c403bd2aeac83ae879cd95abf207552f31880e32274d69e26bd2b97a1efb9ba0bdcf6f8f5ac2617367120a83
   languageName: node
   linkType: hard
 
@@ -9007,7 +8981,7 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"global@npm:^4.4.0, global@npm:~4.4.0":
+"global@npm:~4.4.0":
   version: 4.4.0
   resolution: "global@npm:4.4.0"
   dependencies:
@@ -9524,13 +9498,6 @@ fsevents@~2.3.2:
   version: 1.0.0
   resolution: "hsla-regex@npm:1.0.0"
   checksum: 9aa6eb9ff6c102d2395435aa5d1d91eae20043c4b1497c543d8db501c05f3edacd9a07fb34a987059d7902dba415af4cb4e610f751859ae8e7525df4ffcd085f
-  languageName: node
-  linkType: hard
-
-"html-attributes@npm:1.1.0":
-  version: 1.1.0
-  resolution: "html-attributes@npm:1.1.0"
-  checksum: 0c242d637e862897f07d5088dc79ecd0702418e1861167e6c386ef7485f47ddcc8441c5264f65560fb6ba121c3388a2221a9c873b092b21f03f7f9304bd84c70
   languageName: node
   linkType: hard
 
@@ -15861,16 +15828,6 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"short-uuid@npm:^4.1.0":
-  version: 4.2.0
-  resolution: "short-uuid@npm:4.2.0"
-  dependencies:
-    any-base: ^1.1.0
-    uuid: ^8.3.2
-  checksum: 09013559393bc26d1462ae27c84b4eb7e6e4052e9fea1704f21370e226864f9dfcd1b9465eefa980da84b2537b70cabd98718193934dcc2a0fc06e7b0d1f4b9e
-  languageName: node
-  linkType: hard
-
 "side-channel@npm:^1.0.4":
   version: 1.0.4
   resolution: "side-channel@npm:1.0.4"
@@ -16137,15 +16094,6 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"sort-media-queries@npm:^0.2.2":
-  version: 0.2.2
-  resolution: "sort-media-queries@npm:0.2.2"
-  dependencies:
-    xtend: ^4.0.0
-  checksum: 1bd7d9fba20cbe25b0fab7818a38961fcabc9e38a3776a3910453f46d364092be8701f2105fa5ce683cc75be2ebb38fea3d7d66c4f5773e13c14da9a75a6e407
-  languageName: node
-  linkType: hard
-
 "source-list-map@npm:^2.0.0":
   version: 2.0.1
   resolution: "source-list-map@npm:2.0.1"
@@ -16282,7 +16230,6 @@ resolve@^2.0.0-next.3:
     "@fortawesome/react-fontawesome": ^0.1.14
     cheerio: ^1.0.0-rc.10
     gatsby: ^3.10.2
-    gatsby-background-image: ^1.5.3
     gatsby-plugin-catch-links: ^3.10.0
     gatsby-plugin-google-analytics: ^3.10.0
     gatsby-plugin-image: ^1.10.1
@@ -17919,15 +17866,6 @@ resolve@^2.0.0-next.3:
   bin:
     uuid: ./bin/uuid
   checksum: 58de2feed61c59060b40f8203c0e4ed7fd6f99d42534a499f1741218a1dd0c129f4aa1de797bcf822c8ea5da7e4137aa3673431a96dae729047f7aca7b27866f
-  languageName: node
-  linkType: hard
-
-"uuid@npm:^8.3.2":
-  version: 8.3.2
-  resolution: "uuid@npm:8.3.2"
-  bin:
-    uuid: dist/bin/uuid
-  checksum: 5575a8a75c13120e2f10e6ddc801b2c7ed7d8f3c8ac22c7ed0c7b2ba6383ec0abda88c905085d630e251719e0777045ae3236f04c812184b7c765f63a70e58df
   languageName: node
   linkType: hard
 
