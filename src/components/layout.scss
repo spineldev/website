@@ -524,10 +524,10 @@ main {
 	outline: 1px solid transparentize($blue, .58);
 	margin: 1rem auto;
 	color: $blue;
-
-	a {
-		font-weight: bold;
-		color: inherit;
+	display: block;
+	border: none;
+	strong {
+		font-weight: 600;
 	}
 }
 

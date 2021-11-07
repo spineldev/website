@@ -1,11 +1,11 @@
 import React from "react"
+import { Link } from "gatsby"
 
 const ImportantInfoBlock = () => (
   <>
-  {/* <aside className="block--important-info">
-    Prosimy Klientów o wchodzenie do biura pojedynczo i zachowanie bezpiecznej odległości 2m od mechanika.&nbsp;<br/>
-    Po wyjściu każdego klienta dezynfekujemy klamki i powierzchnie.
-  </aside> */}
+  <Link className="block--latest-post" to="/praca">
+    <strong>Zatrudnimy elektromechanika, mechanika</strong>: sprawdź ofertę pracy 💼
+  </Link>
   </>
 )
 
