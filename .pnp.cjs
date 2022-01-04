@@ -62,7 +62,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react-helmet", "virtual:65a1ef21d93c1457baec22462b13fb26dd12c3ef4dabd53a822c32ec39f4fc72f595142ec34b12f0106bec039453140ee7748c04c3f8e076e7870f592b307409#npm:6.1.0"],
             ["reset-css", "npm:5.0.1"],
             ["rimraf", "npm:3.0.2"],
-            ["sass", "npm:1.45.1"]
+            ["sass", "npm:1.45.2"]
           ],
           "linkType": "SOFT",
         }]
@@ -11240,7 +11240,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/sass", null],
             ["gatsby", "virtual:65a1ef21d93c1457baec22462b13fb26dd12c3ef4dabd53a822c32ec39f4fc72f595142ec34b12f0106bec039453140ee7748c04c3f8e076e7870f592b307409#npm:4.4.0"],
             ["resolve-url-loader", "npm:3.1.4"],
-            ["sass", "npm:1.45.1"],
+            ["sass", "npm:1.45.2"],
             ["sass-loader", "virtual:766da309bc1ae03b274ac572fb7ceafa5c8e9de335c8269330c4f494defaaa3f7812ce6eebf382ba24b37359e407039c1e0347a2a7508661b25d6c60dec72449#npm:10.2.0"]
           ],
           "packagePeers": [
@@ -19037,10 +19037,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["sass", [
-        ["npm:1.45.1", {
-          "packageLocation": "./.yarn/cache/sass-npm-1.45.1-106ed69ac2-5c310b9d62.zip/node_modules/sass/",
+        ["npm:1.45.2", {
+          "packageLocation": "./.yarn/cache/sass-npm-1.45.2-77bc405d03-7041ae5532.zip/node_modules/sass/",
           "packageDependencies": [
-            ["sass", "npm:1.45.1"],
+            ["sass", "npm:1.45.2"],
             ["chokidar", "npm:3.5.2"],
             ["immutable", "npm:4.0.0"],
             ["source-map-js", "npm:1.0.1"]
@@ -19069,7 +19069,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["loader-utils", "npm:2.0.0"],
             ["neo-async", "npm:2.6.2"],
             ["node-sass", null],
-            ["sass", "npm:1.45.1"],
+            ["sass", "npm:1.45.2"],
             ["schema-utils", "npm:3.1.1"],
             ["semver", "npm:7.3.5"],
             ["webpack", null]
@@ -19758,7 +19758,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react-helmet", "virtual:65a1ef21d93c1457baec22462b13fb26dd12c3ef4dabd53a822c32ec39f4fc72f595142ec34b12f0106bec039453140ee7748c04c3f8e076e7870f592b307409#npm:6.1.0"],
             ["reset-css", "npm:5.0.1"],
             ["rimraf", "npm:3.0.2"],
-            ["sass", "npm:1.45.1"]
+            ["sass", "npm:1.45.2"]
           ],
           "linkType": "SOFT",
         }]
