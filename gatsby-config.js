@@ -3,10 +3,8 @@ const path = require(`path`)
 module.exports = {
   flags: {
     FAST_DEV: true,
-    PARALLEL_QUERY_RUNNING: false,
     PRESERVE_FILE_DOWNLOAD_CACHE: true,
     PARALLEL_SOURCING: true,
-    LMDB_STORE: true,
   },
   siteMetadata: {
     title: `Spinel Hydrualika-Pneumatyka`,
