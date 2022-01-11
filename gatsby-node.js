@@ -32,7 +32,7 @@ exports.createPages = async ({ graphql, actions }) => {
     })
   })
   const pageTemplate = path.resolve(`./src/templates/page.js`)
-  result.data.allWpPage.nodes.forEach(node => {
+  result.data.allWpPage.nodes.filter(node => node.slug !== 'blog').forEach(node => {
     createPage({
       path: node.uri,
       component: pageTemplate,
