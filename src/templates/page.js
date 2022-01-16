@@ -6,7 +6,7 @@ import LatestBlogPostBlock from "../components/LatestBlogPostBlock"
 import ImportantInfoBlock from "../components/ImportantInfoBlock"
 import { Helmet } from "react-helmet"
 
-const PageTemplate = props => {
+const PageTemplate = (props) => {
   const page = props.data.wpPage
   const isFrontPage = page.uri === "/"
   return (
@@ -16,7 +16,9 @@ const PageTemplate = props => {
         {isFrontPage ? (
           <title>Spinel Hydraulika-Pneumatyka</title>
         ) : (
-          <title>{page.title.replace('<br>', '')} | Spinel Hydraulika-Pneumatyka</title>
+          <title>
+            {page.title.replace("<br>", "")} | Spinel Hydraulika-Pneumatyka
+          </title>
         )}
       </Helmet>
       <Header siteTitle={page.title} isFrontPage={isFrontPage} />
@@ -30,7 +32,7 @@ const PageTemplate = props => {
 export default PageTemplate
 
 export const pageQuery = graphql`
-  query($id: String!) {
+  query ($id: String!) {
     wpPage(id: { eq: $id }) {
       title
       content

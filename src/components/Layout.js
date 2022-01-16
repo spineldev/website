@@ -7,7 +7,7 @@ import icon from "../../assets/icon.png"
 import TopBar from "./TopBar"
 import AuthorizedService from "./AuthorizedService"
 
-const Layout = ({ children, isFrontPage}) => {
+const Layout = ({ children, isFrontPage }) => {
   return (
     <div className={`container page${isFrontPage ? " frontPage" : ""}`}>
       <Helmet>

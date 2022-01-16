@@ -18,13 +18,14 @@ const renderTableOfContentItems = (items) => {
   )
 }
 
-
-const PostTemplate = props => {
+const PostTemplate = (props) => {
   const post = props.data.wpPost
   return (
     <Layout {...props}>
       <Helmet>
-        <title>{post.title.replace('<br>', '')} | Spinel Hydraulika-Pneumatyka</title>
+        <title>
+          {post.title.replace("<br>", "")} | Spinel Hydraulika-Pneumatyka
+        </title>
       </Helmet>
       <Header siteTitle={post.title} isFrontPage={false} />
       <ImportantInfoBlock />
@@ -45,7 +46,7 @@ const PostTemplate = props => {
 export default PostTemplate
 
 export const pageQuery = graphql`
-  query($id: String!) {
+  query ($id: String!) {
     wpPost(id: { eq: $id }) {
       title
       toc

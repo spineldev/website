@@ -10,7 +10,7 @@ const MenuLevel = ({ items }) => {
     <ul>
       {items.map((item, i) => {
         let url = item.path.replace("https://panel.spinel.pl", "")
-        if (url.trim().length === 0 || url.indexOf('nolink') !== -1) url = false
+        if (url.trim().length === 0 || url.indexOf("nolink") !== -1) url = false
         return (
           <li
             key={i}
@@ -30,7 +30,9 @@ const MenuLevel = ({ items }) => {
                 {item.label}
               </button>
             )}
-            {(item.childItems && item.childItems.nodes.length) ? <MenuLevel items={item.childItems.nodes} /> : null}
+            {item.childItems && item.childItems.nodes.length ? (
+              <MenuLevel items={item.childItems.nodes} />
+            ) : null}
           </li>
         )
       })}
@@ -53,10 +55,10 @@ const Menu = ({ menuItems, isFrontPage }) => {
   )
 }
 
-const MenuWrapper = props => {
+const MenuWrapper = (props) => {
   const data = useStaticQuery(graphql`
     query {
-      menu: wpMenu(slug: {eq: "menu-glowne"}) {
+      menu: wpMenu(slug: { eq: "menu-glowne" }) {
         menuItems {
           nodes {
             label
@@ -73,7 +75,9 @@ const MenuWrapper = props => {
       }
     }
   `)
-  const menuItems = data.menu.menuItems.nodes.filter(menuItem => menuItem.parentId === null)
+  const menuItems = data.menu.menuItems.nodes.filter(
+    (menuItem) => menuItem.parentId === null
+  )
   if (menuItems[0].url !== "/") {
     menuItems.unshift({
       label: "Strona główna",
@@ -81,7 +85,7 @@ const MenuWrapper = props => {
       mobileOnly: true,
     })
   }
-  return (<Menu menuItems={menuItems} {...props} />)
+  return <Menu menuItems={menuItems} {...props} />
 }
 
 export default MenuWrapper

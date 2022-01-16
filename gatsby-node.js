@@ -22,7 +22,7 @@ exports.createPages = async ({ graphql, actions }) => {
     }
   `)
   const postTemplate = path.resolve(`./src/templates/post.js`)
-  result.data.allWpPost.nodes.forEach(node => {
+  result.data.allWpPost.nodes.forEach((node) => {
     createPage({
       path: `/blog/${node.slug}`,
       component: postTemplate,
@@ -32,32 +32,34 @@ exports.createPages = async ({ graphql, actions }) => {
     })
   })
   const pageTemplate = path.resolve(`./src/templates/page.js`)
-  result.data.allWpPage.nodes.filter(node => node.slug !== 'blog').forEach(node => {
-    createPage({
-      path: node.uri,
-      component: pageTemplate,
-      context: {
-        id: node.id,
-      },
+  result.data.allWpPage.nodes
+    .filter((node) => node.slug !== "blog")
+    .forEach((node) => {
+      createPage({
+        path: node.uri,
+        component: pageTemplate,
+        context: {
+          id: node.id,
+        },
+      })
     })
-  })
 }
 
 exports.createSchemaCustomization = ({ actions }) => {
-  const { createTypes, createFieldExtension } = actions;
+  const { createTypes, createFieldExtension } = actions
   createFieldExtension({
     name: "content",
     extend: extendContentField,
-  });
+  })
 
   const typeDefs = `
     type WpPost implements Node {
       toc: JSON
       content: String @content
     }
-  `;
-  createTypes(typeDefs);
-};
+  `
+  createTypes(typeDefs)
+}
 
 exports.createResolvers = ({ createResolvers, schema }) =>
   createResolvers({
@@ -66,16 +68,15 @@ exports.createResolvers = ({ createResolvers, schema }) =>
         resolve: createTableOfContents,
       },
     },
-  });
-
+  })
 
 const createTableOfContents = async (source, args, context, info) => {
   const $ = cheerio.load(source.content)
-  const titles = $('h2,h3,h4,h5')
+  const titles = $("h2,h3,h4,h5")
   const getUniqueId = UniqueId()
 
-  const headings = Array.from(titles).map(title => {
-    const depth = parseInt($(title).prop('tagName').substr(1), 10)
+  const headings = Array.from(titles).map((title) => {
+    const depth = parseInt($(title).prop("tagName").substr(1), 10)
     const id = createId($, title)
     return { url: `#${getUniqueId(id)}`, title: $(title).text(), depth }
   })
@@ -88,36 +89,36 @@ const extendContentField = (options, prevFieldConfig) => {
   return {
     resolve(source) {
       const $ = cheerio.load(source.content)
-      const titles = $('h2,h3,h4,h5')
+      const titles = $("h2,h3,h4,h5")
       const getUniqueId = UniqueId()
-      Array.from(titles).forEach(title => {
+      Array.from(titles).forEach((title) => {
         const id = createId($, title)
-        $(title).attr('id', getUniqueId(id))
+        $(title).attr("id", getUniqueId(id))
       })
 
-      return $('body').html()
+      return $("body").html()
     },
   }
 }
 
 function createId($, title) {
-  let id = $(title).attr('id')
+  let id = $(title).attr("id")
 
   if (!id) {
     id = $(title)
       .text()
       .toLowerCase()
-      .replace('ą', 'a')
-      .replace('ę', 'e')
-      .replace('ż', 'z')
-      .replace('ź', 'z')
-      .replace('ć', 'c')
-      .replace('ł', 'ł')
-      .replace('ó', 'ó')
-      .replace('ń', 'ń')
-      .replace('ś', 's')
-      .replace(/[^a-z_0-9]+/gi, '-')
-      .replace(/-+/g, '-')
+      .replace("ą", "a")
+      .replace("ę", "e")
+      .replace("ż", "z")
+      .replace("ź", "z")
+      .replace("ć", "c")
+      .replace("ł", "ł")
+      .replace("ó", "ó")
+      .replace("ń", "ń")
+      .replace("ś", "s")
+      .replace(/[^a-z_0-9]+/gi, "-")
+      .replace(/-+/g, "-")
   }
 
   return id
@@ -125,7 +126,7 @@ function createId($, title) {
 
 function UniqueId() {
   const tempMap = {}
-  return el => {
+  return (el) => {
     if (tempMap[el]) {
       tempMap[el] = tempMap[el] + 1
       const result = `${el}-${tempMap[el]}`

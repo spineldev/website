@@ -4,17 +4,20 @@ import { GatsbyImage } from "gatsby-plugin-image"
 
 const Header = ({ siteTitle, isFrontPage }) => {
   const data = useStaticQuery(graphql`
-      query {
-        bg: file(relativePath: { eq: "headbg.png" }) {
-          childImageSharp {
-            gatsbyImageData(layout: CONSTRAINED, width: 998)
-          }
+    query {
+      bg: file(relativePath: { eq: "headbg.png" }) {
+        childImageSharp {
+          gatsbyImageData(layout: CONSTRAINED, width: 998)
         }
       }
+    }
   `)
   const imageData = data.bg.childImageSharp.gatsbyImageData
   return (
-    <header className={`header${isFrontPage ? " header--home-page" : ""}`} style={{ display: "grid" }}>
+    <header
+      className={`header${isFrontPage ? " header--home-page" : ""}`}
+      style={{ display: "grid" }}
+    >
       <GatsbyImage
         style={{
           gridArea: "1/1",
@@ -28,11 +31,14 @@ const Header = ({ siteTitle, isFrontPage }) => {
           position: "relative",
         }}
       >
-        <h1 dangerouslySetInnerHTML={{ __html: siteTitle.replace('|', '<br/>') }} />
+        <h1
+          dangerouslySetInnerHTML={{ __html: siteTitle.replace("|", "<br/>") }}
+        />
         {isFrontPage && (
           <p>
             Jesteśmy polską firmą rodzinną, działamy nieprzerwanie od 1988 roku.
-            &nbsp;<br />
+            &nbsp;
+            <br />
             Zajmujemy się kompleksowo hydrauliką siłową i pneumatyką.
           </p>
         )}

@@ -18,8 +18,8 @@ module.exports = {
       options: {
         defaults: {
           formats: [`auto`, `webp`, `avif`],
-        }
-      }
+        },
+      },
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-react-helmet`,
@@ -36,7 +36,7 @@ module.exports = {
         background_color: `#dadada`,
         theme_color: `#dadada`,
         display: `minimal-ui`,
-        icon: `assets/icon.png`
+        icon: `assets/icon.png`,
       },
     },
     {
@@ -45,7 +45,7 @@ module.exports = {
         url: `https://panel.spinel.pl/graphql`,
         html: {
           useGatsbyImage: true,
-        }
+        },
       },
     },
     `gatsby-plugin-sass`,
@@ -57,7 +57,7 @@ module.exports = {
             {
               family: `Source Sans Pro`,
               subsets: [`latin-ext`],
-              variants: [`400`, `700`]
+              variants: [`400`, `700`],
             },
           ],
         },

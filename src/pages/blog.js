@@ -29,18 +29,21 @@ const BlogLayout = ({ posts }) => {
       </Helmet>
       <Header siteTitle="Blog firmowy" isFrontPage={false} />
       <ImportantInfoBlock />
-      {posts.map(post => (
+      {posts.map((post) => (
         <Post post={post} />
       ))}
     </Layout>
   )
 }
 
-const Blog = props => (
+const Blog = (props) => (
   <StaticQuery
     query={graphql`
       query {
-        allWpPost(sort: {fields: date, order: DESC}, filter: {status: {eq: "publish"}}) {
+        allWpPost(
+          sort: { fields: date, order: DESC }
+          filter: { status: { eq: "publish" } }
+        ) {
           nodes {
             id
             slug
@@ -50,12 +53,7 @@ const Blog = props => (
         }
       }
     `}
-    render={data => (
-      <BlogLayout
-        posts={data.allWpPost.nodes}
-        {...props}
-      />
-    )}
+    render={(data) => <BlogLayout posts={data.allWpPost.nodes} {...props} />}
   />
 )
 
