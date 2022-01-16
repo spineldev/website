@@ -44,7 +44,7 @@ module.exports = {
       options: {
         url: `https://panel.spinel.pl/graphql`,
         html: {
-          useGatsbyImage: false,
+          useGatsbyImage: true,
         }
       },
     },
