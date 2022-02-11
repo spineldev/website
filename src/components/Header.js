@@ -23,7 +23,7 @@ const Header = ({ siteTitle, isFrontPage }) => {
           gridArea: "1/1",
         }}
         image={imageData}
-        critical
+        loading="eager"
       />
       <div
         className="header__content"
