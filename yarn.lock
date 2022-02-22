@@ -2,7 +2,7 @@
 # Manual changes might be lost - proceed with caution!
 
 __metadata:
-  version: 5
+  version: 6
   cacheKey: 8
 
 "@ardatan/fetch-event-source@npm:2.0.2":
@@ -3431,6 +3431,15 @@ __metadata:
   bin:
     acorn: bin/acorn
   checksum: 0a8fd264349285aa36194b26a5a9d70c3641e78ad459ec44b9a9a5738e0ce6d86ec120ca2c0f04477165cee912fdeb158f62d6582697185c82278bdbf71187f8
+  languageName: node
+  linkType: hard
+
+"acorn@npm:^8.5.0":
+  version: 8.7.0
+  resolution: "acorn@npm:8.7.0"
+  bin:
+    acorn: bin/acorn
+  checksum: e0f79409d68923fbf1aa6d4166f3eedc47955320d25c89a20cc822e6ba7c48c5963d5bc657bc242d68f7a4ac9faf96eef033e8f73656da6c640d4219935fdfd0
   languageName: node
   linkType: hard
 
@@ -8069,9 +8078,9 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"gatsby@npm:^4.7.1":
-  version: 4.7.1
-  resolution: "gatsby@npm:4.7.1"
+"gatsby@npm:^4.7.2":
+  version: 4.7.2
+  resolution: "gatsby@npm:4.7.2"
   dependencies:
     "@babel/code-frame": ^7.14.0
     "@babel/core": ^7.15.5
@@ -8232,7 +8241,7 @@ fsevents@~2.3.2:
       optional: true
   bin:
     gatsby: ./cli.js
-  checksum: defa3d2c3a69ecaa7533c99be9d53861ca93d5fb6185387a09d3a49dbf923f4c785c072c763f7ff42e4ed98d0bd349057b891af9312f814951fffb7811047a8d
+  checksum: f22e9472245c1d273e75dea64490f54a268fdd543036369b7eb13f22531184cc418b8cb2fa45c2b0e1ed9b41169033bd86a532e789705643a4c5c089e4e4042b
   languageName: node
   linkType: hard
 
@@ -13765,16 +13774,16 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"sass@npm:^1.49.7":
-  version: 1.49.7
-  resolution: "sass@npm:1.49.7"
+"sass@npm:^1.49.8":
+  version: 1.49.8
+  resolution: "sass@npm:1.49.8"
   dependencies:
     chokidar: ">=3.0.0 <4.0.0"
     immutable: ^4.0.0
     source-map-js: ">=0.6.2 <2.0.0"
   bin:
     sass: sass.js
-  checksum: 514d1abff594aa56afdc9eb7e40d1cbd9cf1ed6954c4e0ef494266d18965151c6f936e137cd118a138f7677a7bb98f2bbf2d1a485a3f5f66c78be0007506cc9b
+  checksum: ff4051c11223cb6e56ae62fa71448ed65b402949facfbd831f9781244eece9f1d22be45e61af8e0d0fbe186857de2613b07d9247b036ac2326c24e6ebd19bbbe
   languageName: node
   linkType: hard
 
@@ -14364,7 +14373,7 @@ resolve@^2.0.0-next.3:
     "@fortawesome/free-solid-svg-icons": ^6.0.0
     "@fortawesome/react-fontawesome": ^0.1.17
     cheerio: ^1.0.0-rc.10
-    gatsby: ^4.7.1
+    gatsby: ^4.7.2
     gatsby-plugin-catch-links: ^4.7.0
     gatsby-plugin-google-analytics: ^4.7.0
     gatsby-plugin-image: ^2.7.0
@@ -14386,7 +14395,7 @@ resolve@^2.0.0-next.3:
     react-helmet: ^6.1.0
     reset-css: ^5.0.1
     rimraf: ^3.0.2
-    sass: ^1.49.7
+    sass: ^1.49.8
   languageName: unknown
   linkType: soft
 
