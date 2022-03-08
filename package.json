@@ -8,7 +8,7 @@
     "@fortawesome/free-solid-svg-icons": "^6.0.0",
     "@fortawesome/react-fontawesome": "^0.1.17",
     "cheerio": "^1.0.0-rc.10",
-    "gatsby": "^4.9.0",
+    "gatsby": "^4.9.2",
     "gatsby-plugin-catch-links": "^4.9.0",
     "gatsby-plugin-google-analytics": "^4.9.0",
     "gatsby-plugin-image": "^2.9.0",

@@ -8787,9 +8787,9 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"gatsby@npm:^4.9.0":
-  version: 4.9.0
-  resolution: "gatsby@npm:4.9.0"
+"gatsby@npm:^4.9.2":
+  version: 4.9.2
+  resolution: "gatsby@npm:4.9.2"
   dependencies:
     "@babel/code-frame": ^7.14.0
     "@babel/core": ^7.15.5
@@ -8887,7 +8887,7 @@ fsevents@~2.3.2:
     joi: ^17.4.2
     json-loader: ^0.5.7
     latest-version: 5.1.0
-    lmdb: 2.2.1
+    lmdb: ^2.2.3
     lodash: ^4.17.21
     md5-file: ^5.0.0
     meant: ^1.0.3
@@ -8952,7 +8952,7 @@ fsevents@~2.3.2:
       optional: true
   bin:
     gatsby: ./cli.js
-  checksum: 0e84bdc731b976f5f15372e7f22ea2fc5de6ce6d516da149d367c8dcc2a607b8daf951953923bed4ed11adc40235be64e950d1a365eacd84f6f172eefef5447b
+  checksum: a38f9897566688feb53b9148d34b0b040ac8235e8aa29b5e12380a9143b31fee98bafbd54f46344869d5acf504dcbbdddad9455446a0efb6d0c785c63dc11cca
   languageName: node
   linkType: hard
 
@@ -10897,20 +10897,6 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"lmdb@npm:2.2.1":
-  version: 2.2.1
-  resolution: "lmdb@npm:2.2.1"
-  dependencies:
-    msgpackr: ^1.5.4
-    nan: ^2.14.2
-    node-gyp: latest
-    node-gyp-build: ^4.2.3
-    ordered-binary: ^1.2.4
-    weak-lru-cache: ^1.2.2
-  checksum: ee47e0dbfab6950f24ec252534149b789105d87ceb3a3ce4e8d0f3966e5b710a9ba92302f7c873d7910e7dd899f2994410627363a17f80092487184467029569
-  languageName: node
-  linkType: hard
-
 "lmdb@npm:^2.0.2":
   version: 2.2.3
   resolution: "lmdb@npm:2.2.3"
@@ -10936,6 +10922,20 @@ fsevents@~2.3.2:
     ordered-binary: ^1.2.4
     weak-lru-cache: ^1.2.2
   checksum: 6030a2ddc80bbc72e5ec5174efea8d7b714575fe2894f4cc843fa1da29c1f097501f8f802649f2f74fa76c02b3d4bcb031a4d61109406094977dd1ecbccec2e7
+  languageName: node
+  linkType: hard
+
+"lmdb@npm:^2.2.3":
+  version: 2.2.4
+  resolution: "lmdb@npm:2.2.4"
+  dependencies:
+    msgpackr: ^1.5.4
+    nan: ^2.14.2
+    node-gyp: latest
+    node-gyp-build: ^4.2.3
+    ordered-binary: ^1.2.4
+    weak-lru-cache: ^1.2.2
+  checksum: df75e8ae266fb0676320366ba8847fe1e6c3c43af1c28c08eba35a35cb68c8f0be06ae305a9fecd6e2db2504dc92462da442272778facc6a8a0d953fbf0267ff
   languageName: node
   linkType: hard
 
@@ -15182,7 +15182,7 @@ resolve@^2.0.0-next.3:
     "@fortawesome/free-solid-svg-icons": ^6.0.0
     "@fortawesome/react-fontawesome": ^0.1.17
     cheerio: ^1.0.0-rc.10
-    gatsby: ^4.9.0
+    gatsby: ^4.9.2
     gatsby-plugin-catch-links: ^4.9.0
     gatsby-plugin-google-analytics: ^4.9.0
     gatsby-plugin-image: ^2.9.0
