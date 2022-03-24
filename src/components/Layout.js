@@ -13,7 +13,11 @@ const Layout = ({ children, isFrontPage }) => {
       <Helmet>
         <html lang="pl" />
         <link rel="icon" type="image/png" href={icon} sizes="16x16" />
-        <script defer data-domain="spinel.pl" src="https://stats.wotnak.dev/js/plausible.js"></script>
+        <script
+          defer
+          data-domain="spinel.pl"
+          src="https://stats.wotnak.dev/js/plausible.js"
+        ></script>
       </Helmet>
       <TopBar isFrontPage={isFrontPage} />
       {children}
