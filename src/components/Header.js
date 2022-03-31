@@ -24,6 +24,7 @@ const Header = ({ siteTitle, isFrontPage }) => {
         }}
         image={imageData}
         loading="eager"
+        alt=""
       />
       <div
         className="header__content"
