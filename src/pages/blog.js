@@ -6,19 +6,19 @@ import ImportantInfoBlock from "../components/ImportantInfoBlock"
 import { Helmet } from "react-helmet"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
-const Post = ({ post }) =>{
+const Post = ({ post }) => {
   const desktop = getImage(post.featuredImage?.node?.desktop)
   const mobile = getImage(post.featuredImage?.node?.mobile)
-  const isBrowser = typeof window !== 'undefined'
+  const isBrowser = typeof window !== "undefined"
   return (
-    <article className={`post${desktop?' post--withImage':''}`}>
-      { desktop && (!isBrowser || window.innerWidth) > 700 && (
+    <article className={`post${desktop ? " post--withImage" : ""}`}>
+      {desktop && (!isBrowser || window.innerWidth) > 700 && (
         <GatsbyImage
           image={desktop}
           alt={post.featuredImage?.node?.altText || ``}
         />
       )}
-      { mobile && isBrowser && window.innerWidth <= 700 && (
+      {mobile && isBrowser && window.innerWidth <= 700 && (
         <GatsbyImage
           image={mobile}
           alt={post.featuredImage?.node?.altText || ``}
