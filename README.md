@@ -1,3 +1,1 @@
-# spinel
-
-spinel.pl frontend
+# spinel.pl website
