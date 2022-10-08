@@ -1,0 +1,5 @@
+_core:
+  default_config_hash: ZpvHm-GoeE8G3RV9iCfkieemdEpYhQM7TyoblqfRYQw
+langcode: pl
+enabled_sources:
+  - drupalorg_mockapi

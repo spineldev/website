@@ -10,14 +10,28 @@
     ],
     "require": {
         "composer/installers": "^v2.2.0",
-        "drupal/core-composer-scaffold": "^10.0",
-        "drupal/core-recommended": "^10.0",
-        "drupal/devel": "^5.0@beta",
-        "drupal/gin": "^3.0@beta",
-        "drupal/gin_login": "^1.3",
-        "drupal/gin_toolbar": "^1.0@beta",
-        "drupal/payu_donations": "^1.0",
-        "drush/drush": "^11.1.1"
+        "cweagans/composer-patches": "^1.7",
+        "drupal/admin_toolbar": "^3.2.1",
+        "drupal/allowed_formats": "^1.5",
+        "drupal/amswap": "^3.1",
+        "drupal/core-composer-scaffold": "^9.4.8",
+        "drupal/core-recommended": "^9.4.8",
+        "drupal/css_editor": "^2.0",
+        "drupal/devel": "^5.0.2@beta",
+        "drupal/gin": "^3.x-dev@dev",
+        "drupal/gin_lb": "^1.0@beta",
+        "drupal/gin_login": "^1.x-dev@dev",
+        "drupal/gin_toolbar": "^1.x-dev@dev",
+        "drupal/imageapi_optimize": "^4.0",
+        "drupal/imageapi_optimize_avif_webp": "^1.0.7",
+        "drupal/imageapi_optimize_gd": "^2.0@beta",
+        "drupal/mail_login": "^2.6",
+        "drupal/menu_link_attributes": "^1.2",
+        "drupal/module_filter": "^3.2",
+        "drupal/pathauto": "^1.11",
+        "drupal/project_browser": "1.0.x-dev@dev",
+        "drupal/symfony_mailer": "^1.0@alpha",
+        "drush/drush": "^11.2.1"
     },
     "conflict": {
         "drupal/drupal": "*"
@@ -29,7 +43,8 @@
             "composer/installers": true,
             "drupal/core-composer-scaffold": true,
             "phpstan/extension-installer": true,
-            "dealerdirect/phpcodesniffer-composer-installer": true
+            "dealerdirect/phpcodesniffer-composer-installer": true,
+            "cweagans/composer-patches": true
         },
         "sort-packages": true
     },
@@ -41,6 +56,7 @@
             "file-mapping": {
                 "[web-root]/.csslintrc": false,
                 "[web-root]/.ht.router.php": false,
+                "[web-root]/.htaccess": false,
                 "[web-root]/.eslintignore": false,
                 "[web-root]/.eslintrc.json": false,
                 "[web-root]/example.gitignore": false,
@@ -50,7 +66,6 @@
                 "[web-root]/modules/README.txt": false,
                 "[web-root]/profiles/README.txt": false,
                 "[web-root]/sites/README.txt": false,
-                "[web-root]/sites/development.services.yml": false,
                 "[web-root]/sites/example.settings.local.php": false,
                 "[web-root]/sites/example.sites.php": false,
                 "[web-root]/themes/README.txt": false
@@ -84,16 +99,21 @@
             "web/themes/custom/{$name}": [
                 "type:drupal-custom-theme"
             ]
+        },
+        "patches": {
+            "drupal/amswap": {
+              "https://www.drupal.org/project/amswap/issues/3258035": "https://git.drupalcode.org/project/amswap/-/merge_requests/1.patch"
+            }
         }
     },
     "require-dev": {
-        "armin/editorconfig-cli": "^1.5",
+        "armin/editorconfig-cli": "^1.5.2",
         "dealerdirect/phpcodesniffer-composer-installer": "^0.7.2",
-        "drupal/coder": "^8.3",
-        "mglaman/phpstan-drupal": "^1.1",
-        "phpstan/phpstan": "^1.8",
+        "drupal/coder": "^8.3.16",
+        "mglaman/phpstan-drupal": "^1.1.25",
+        "phpstan/phpstan": "^1.8.8",
         "phpstan/phpstan-deprecation-rules": "^1.0",
-        "squizlabs/php_codesniffer": "^3.7",
+        "squizlabs/php_codesniffer": "^3.7.1",
         "vincentlanglet/twig-cs-fixer": "^0.5.0"
     }
 }

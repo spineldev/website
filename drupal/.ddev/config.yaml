@@ -1,0 +1,10 @@
+name: spinel
+type: drupal10
+docroot: web
+php_version: "8.1"
+webserver_type: nginx-fpm
+database:
+  type: mariadb
+  version: "10.4"
+composer_version: "2"
+nodejs_version: "18"

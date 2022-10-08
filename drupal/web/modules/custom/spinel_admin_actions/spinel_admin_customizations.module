@@ -1,0 +1,13 @@
+<?php
+
+function spinel_admin_customizations_form_node_form_alter(&$form, &$form_state, $form_id) {
+  // Make revision log message required.
+  if (isset($form['revision_log'])) {
+    $form['revision']['#attributes']['disabled'] = TRUE;
+    $form['revision']['#value'] = TRUE;
+    $form['revision_log']['#required'] = TRUE;
+    $form['revision_log']['widget']['#required'] = TRUE;
+    $form['revision_log']['widget'][0]['#required'] = TRUE;
+    $form['revision_log']['widget'][0]['value']['#required'] = TRUE;
+  }
+}

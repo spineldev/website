@@ -1,0 +1,14 @@
+uuid: f7c57841-065b-44e6-9828-518ae4b6be13
+langcode: pl
+status: true
+dependencies:
+  config:
+    - user.role.admin
+  module:
+    - user
+id: user_remove_role_action.admin
+label: 'Odbierz rolę Administrator wskazanym użytkownikom'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: admin

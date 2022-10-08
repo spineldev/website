@@ -1,0 +1,22 @@
+uuid: 60318e28-95e8-44d9-bbaf-646cf3c0526c
+langcode: pl
+status: true
+dependencies:
+  config:
+    - node.type.post
+id: node.post.sticky
+field_name: sticky
+entity_type: node
+bundle: post
+label: 'Przyklejony na górze listy'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Włączony
+  off_label: Wyłączony
+field_type: boolean

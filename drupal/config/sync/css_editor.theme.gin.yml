@@ -1,0 +1,5 @@
+path: 'public://css_editor/gin.css'
+enabled: true
+css: ".toolbar .toolbar-bar .toolbar-icon-editor-pages:before {\r\n  -webkit-mask-image: url(/themes/contrib/gin/dist/media/sprite.svg#content-view);\r\n  mask-image: url(/themes/contrib/gin/dist/media/sprite.svg#content-view);\r\n}\r\n.toolbar .toolbar-bar .toolbar-icon-editor-blog:before {\r\n  -webkit-mask-image: url(/themes/contrib/gin/dist/media/sprite.svg#group-view);\r\n  mask-image: url(/themes/contrib/gin/dist/media/sprite.svg#group-view);\r\n}\r\n.toolbar .toolbar-bar .toolbar-icon-editor-media-library:before {\r\n  -webkit-mask-image: url(/themes/contrib/gin/dist/media/sprite.svg#grid-view);\r\n  mask-image: url(/themes/contrib/gin/dist/media/sprite.svg#grid-view);\r\n}"
+plaintext_enabled: false
+autopreview_enabled: false

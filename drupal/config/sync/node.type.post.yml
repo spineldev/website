@@ -1,0 +1,18 @@
+uuid: 31b52c6d-e658-4cb7-91ca-8f63f3f3818f
+langcode: pl
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Wpis
+type: post
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

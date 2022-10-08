@@ -1,0 +1,61 @@
+uuid: 37c646f0-682d-404e-9e99-32e003b7953d
+langcode: pl
+status: true
+dependencies:
+  config:
+    - media.type.image
+    - node.type.page
+    - node.type.post
+  module:
+    - file
+    - media
+    - node
+    - path
+    - system
+    - taxonomy
+    - toolbar
+id: editor
+label: Redaktor
+weight: 2
+is_admin: null
+permissions:
+  - 'access content overview'
+  - 'access files overview'
+  - 'access media overview'
+  - 'access site in maintenance mode'
+  - 'access taxonomy overview'
+  - 'access toolbar'
+  - 'administer menu'
+  - 'create image media'
+  - 'create media'
+  - 'create page content'
+  - 'create post content'
+  - 'create url aliases'
+  - 'delete all revisions'
+  - 'delete any image media'
+  - 'delete any media'
+  - 'delete any page content'
+  - 'delete any post content'
+  - 'delete media'
+  - 'delete own image media'
+  - 'delete own page content'
+  - 'delete own post content'
+  - 'delete post revisions'
+  - 'edit any image media'
+  - 'edit any page content'
+  - 'edit any post content'
+  - 'edit own image media'
+  - 'edit own page content'
+  - 'edit own post content'
+  - 'revert all revisions'
+  - 'revert page revisions'
+  - 'revert post revisions'
+  - 'update any media'
+  - 'update media'
+  - 'view all media revisions'
+  - 'view all revisions'
+  - 'view own unpublished content'
+  - 'view own unpublished media'
+  - 'view page revisions'
+  - 'view post revisions'
+  - 'view the administration theme'

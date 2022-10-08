@@ -1,0 +1,28 @@
+uuid: 8321350c-de57-479a-a966-626af42dd0ba
+langcode: pl
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.page
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    allowed_formats:
+      - full_html
+id: node.page.body
+field_name: body
+entity_type: node
+bundle: page
+label: Zawartość
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

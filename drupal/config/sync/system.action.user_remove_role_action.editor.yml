@@ -1,0 +1,14 @@
+uuid: 6ed3f91d-ba5d-4c62-bab6-c9240f6579c3
+langcode: pl
+status: true
+dependencies:
+  config:
+    - user.role.editor
+  module:
+    - user
+id: user_remove_role_action.editor
+label: 'Odbierz rolę Redaktor wskazanym użytkownikom'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: editor

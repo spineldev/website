@@ -1,0 +1,28 @@
+uuid: d4686800-3ee8-49b4-8361-d357a06ff190
+langcode: pl
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.post
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    allowed_formats:
+      - full_html
+id: node.post.body
+field_name: body
+entity_type: node
+bundle: post
+label: Body
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: true
+field_type: text_with_summary

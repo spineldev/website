@@ -1,0 +1,8 @@
+uuid: cd8066c6-afcd-4de8-80d6-c91f0e35ad1f
+langcode: und
+status: true
+dependencies: {  }
+id: editor-menu
+label: 'Menu redaktora'
+description: ''
+locked: false

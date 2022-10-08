@@ -1,0 +1,15 @@
+spinel_admin_customizations.add_post:
+  route_name: node.add
+  route_parameters:
+    node_type: 'post'
+  title: 'Add new post'
+  appears_on:
+    - view.content.editor_content_posts
+
+spinel_admin_customizations.add_page:
+  route_name: node.add
+  route_parameters:
+    node_type: 'page'
+  title: 'Add new page'
+  appears_on:
+    - view.content.editor_content_pages

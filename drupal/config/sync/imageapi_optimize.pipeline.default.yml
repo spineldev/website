@@ -1,0 +1,25 @@
+uuid: 268ef98a-9b09-48b0-97fb-621a31b65135
+langcode: pl
+status: true
+dependencies:
+  module:
+    - imageapi_optimize_avif_webp
+    - imageapi_optimize_gd
+name: default
+label: default
+processors:
+  bb811cb7-64ea-4ce4-a2fd-a35e3d36f28d:
+    id: imageapi_optimize_avif_webp
+    data:
+      avif_quality: '80'
+      webp_quality: '80'
+    weight: -9
+    uuid: bb811cb7-64ea-4ce4-a2fd-a35e3d36f28d
+  4bcf2815-10c0-4d94-9c2c-9c653728e2bd:
+    id: imageapi_optimize_gd
+    data:
+      quality: '75'
+      file_types:
+        image/jpeg: image/jpeg
+    weight: -10
+    uuid: 4bcf2815-10c0-4d94-9c2c-9c653728e2bd

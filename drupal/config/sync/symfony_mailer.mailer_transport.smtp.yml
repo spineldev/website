@@ -1,0 +1,12 @@
+uuid: 14dfc62e-cb6f-4e43-8332-b265b4c9f012
+langcode: pl
+status: true
+dependencies: {  }
+id: smtp
+label: SMTP
+plugin: smtp
+configuration:
+  user: ''
+  pass: ''
+  host: localhost
+  port: 1025
