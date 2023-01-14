@@ -1,10 +1,13 @@
 import React from "react"
-import { StaticQuery, Link, graphql } from "gatsby"
+import { useStaticQuery, Link, graphql } from "gatsby"
 import Layout from "../components/Layout"
 import Header from "../components/Header"
 import ImportantInfoBlock from "../components/ImportantInfoBlock"
-import { Helmet } from "react-helmet"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
+
+export const Head = () => (
+  <title>Blog | Spinel Hydraulika-Pneumatyka</title>
+)
 
 const Post = ({ post }) => {
   const desktop = getImage(post.featuredImage?.node?.desktop)
@@ -43,10 +46,6 @@ const Post = ({ post }) => {
 const BlogLayout = ({ posts }) => {
   return (
     <Layout>
-      <Helmet>
-        <meta charSet="utf-8" />
-        <title>Blog | Spinel Hydraulika-Pneumatyka</title>
-      </Helmet>
       <Header siteTitle="Blog firmowy" isFrontPage={false} />
       <ImportantInfoBlock />
       {posts.map((post) => (
@@ -56,40 +55,38 @@ const BlogLayout = ({ posts }) => {
   )
 }
 
-const Blog = (props) => (
-  <StaticQuery
-    query={graphql`
-      query {
-        allWpPost(
-          sort: { fields: date, order: DESC }
-          filter: { status: { eq: "publish" } }
-        ) {
-          nodes {
-            id
-            slug
-            title
-            excerpt
-            featuredImage {
-              node {
-                altText
-                desktop: localFile {
-                  childImageSharp {
-                    gatsbyImageData(width: 232, height: 232)
-                  }
+const Blog = (props) => {
+  const data = useStaticQuery(graphql`
+    query {
+      allWpPost(
+        sort: {date: DESC},
+        filter: { status: { eq: "publish" } }
+      ) {
+        nodes {
+          id
+          slug
+          title
+          excerpt
+          featuredImage {
+            node {
+              altText
+              desktop: localFile {
+                childImageSharp {
+                  gatsbyImageData(width: 232, height: 232)
                 }
-                mobile: localFile {
-                  childImageSharp {
-                    gatsbyImageData(width: 500, height: 150)
-                  }
+              }
+              mobile: localFile {
+                childImageSharp {
+                  gatsbyImageData(width: 500, height: 150)
                 }
               }
             }
           }
         }
       }
-    `}
-    render={(data) => <BlogLayout posts={data.allWpPost.nodes} {...props} />}
-  />
-)
+    }
+  `)
+  return (<BlogLayout posts={data.allWpPost.nodes} {...props} />)
+}
 
 export default Blog

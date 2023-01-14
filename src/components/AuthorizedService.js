@@ -12,7 +12,7 @@ const AuthorizedService = () => {
             layout: FIXED
             width: 119
             height: 58
-            placeholder: TRACED_SVG
+            placeholder: DOMINANT_COLOR
           )
         }
       }
@@ -22,7 +22,7 @@ const AuthorizedService = () => {
             layout: FIXED
             width: 150
             height: 58
-            placeholder: TRACED_SVG
+            placeholder: DOMINANT_COLOR
           )
         }
       }
@@ -32,7 +32,7 @@ const AuthorizedService = () => {
             layout: FIXED
             width: 150
             height: 55
-            placeholder: TRACED_SVG
+            placeholder: DOMINANT_COLOR
           )
         }
       }

@@ -1,4 +1,5 @@
 import React from "react"
+import icon from "../assets/icon.png"
 
 export default function HTML(props) {
   return (
@@ -10,6 +11,7 @@ export default function HTML(props) {
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
+        <link rel="icon" type="image/png" href={icon} sizes="16x16" />
         {props.headComponents}
       </head>
       <body {...props.bodyAttributes}>

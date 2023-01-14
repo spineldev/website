@@ -2,9 +2,10 @@ const path = require(`path`)
 
 module.exports = {
   flags: {
+    DEV_SSR: true,
     FAST_DEV: true,
-    PRESERVE_FILE_DOWNLOAD_CACHE: true,
     PARALLEL_SOURCING: true,
+    PRESERVE_FILE_DOWNLOAD_CACHE: true,
   },
   siteMetadata: {
     title: `Spinel Hydrualika-Pneumatyka`,
@@ -22,7 +23,6 @@ module.exports = {
       },
     },
     `gatsby-transformer-sharp`,
-    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
       options: { path: path.join(__dirname, `assets`) },
@@ -75,9 +75,8 @@ module.exports = {
       },
     },
     `gatsby-plugin-sitemap`,
-    `gatsby-plugin-robots-txt`,
     {
-      resolve: `gatsby-plugin-react-helmet-canonical-urls`,
+      resolve: `gatsby-plugin-canonical-urls`,
       options: {
         siteUrl: `https://spinel.pl`,
       },
