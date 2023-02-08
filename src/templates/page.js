@@ -9,7 +9,7 @@ export const Head = (props) => {
   const page = props.data.wpPage
   const isFrontPage = page.uri === "/"
   const title =
-    (isFrontPage ? "" : `{page.title.replace("<br>", "")} | `) +
+    (isFrontPage ? "" : `${page.title.replace("<br>", "")} | `) +
     "Spinel Hydraulika-Pneumatyka"
   return <title>{title}</title>
 }
