@@ -5,7 +5,7 @@ import Header from "../components/Header"
 import ImportantInfoBlock from "../components/ImportantInfoBlock"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
-export const Head = () => <title>Blog | Spinel Hydraulika-Pneumatyka</title>
+export const Head = () => <title>Baza wiedzy | Spinel Hydraulika-Pneumatyka</title>
 
 const Post = ({ post }) => {
   const desktop = getImage(post.featuredImage?.node?.desktop)
@@ -44,7 +44,7 @@ const Post = ({ post }) => {
 const BlogLayout = ({ posts }) => {
   return (
     <Layout>
-      <Header siteTitle="Blog firmowy" isFrontPage={false} />
+      <Header siteTitle="Baza wiedzy" isFrontPage={false} />
       <ImportantInfoBlock />
       {posts.map((post) => (
         <Post post={post} />

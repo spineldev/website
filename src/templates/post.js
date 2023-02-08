@@ -33,7 +33,7 @@ const PostTemplate = (props) => {
       <Header siteTitle={post.title} isFrontPage={false} />
       <ImportantInfoBlock />
       <Link to="/blog/" className="back-to-blog">
-        ← Wróć na blog
+        ← Wróć do bazy wiedzy
       </Link>
       {post.toc && post.toc.items && post.toc.items.length >= 2 && (
         <aside className="toc">
