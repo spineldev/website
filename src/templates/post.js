@@ -7,7 +7,9 @@ import ImportantInfoBlock from "../components/ImportantInfoBlock"
 export const Head = (props) => {
   const post = props.data.wpPost
   return (
-    <title>{post.title.replace("<br>", "")} | Spinel Hydraulika-Pneumatyka</title>
+    <title>
+      {post.title.replace("<br>", "")} | Spinel Hydraulika-Pneumatyka
+    </title>
   )
 }
 

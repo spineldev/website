@@ -8,10 +8,10 @@ import ImportantInfoBlock from "../components/ImportantInfoBlock"
 export const Head = (props) => {
   const page = props.data.wpPage
   const isFrontPage = page.uri === "/"
-  const title = (isFrontPage ? '' : `{page.title.replace("<br>", "")} | `) + 'Spinel Hydraulika-Pneumatyka'
-  return (
-    <title>{title}</title>
-  )
+  const title =
+    (isFrontPage ? "" : `{page.title.replace("<br>", "")} | `) +
+    "Spinel Hydraulika-Pneumatyka"
+  return <title>{title}</title>
 }
 
 const PageTemplate = (props) => {

@@ -5,9 +5,7 @@ import Header from "../components/Header"
 import ImportantInfoBlock from "../components/ImportantInfoBlock"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
-export const Head = () => (
-  <title>Blog | Spinel Hydraulika-Pneumatyka</title>
-)
+export const Head = () => <title>Blog | Spinel Hydraulika-Pneumatyka</title>
 
 const Post = ({ post }) => {
   const desktop = getImage(post.featuredImage?.node?.desktop)
@@ -58,10 +56,7 @@ const BlogLayout = ({ posts }) => {
 const Blog = (props) => {
   const data = useStaticQuery(graphql`
     query {
-      allWpPost(
-        sort: {date: DESC},
-        filter: { status: { eq: "publish" } }
-      ) {
+      allWpPost(sort: { date: DESC }, filter: { status: { eq: "publish" } }) {
         nodes {
           id
           slug
@@ -86,7 +81,7 @@ const Blog = (props) => {
       }
     }
   `)
-  return (<BlogLayout posts={data.allWpPost.nodes} {...props} />)
+  return <BlogLayout posts={data.allWpPost.nodes} {...props} />
 }
 
 export default Blog
