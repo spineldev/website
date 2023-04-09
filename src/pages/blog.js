@@ -1,30 +1,26 @@
 import React from "react"
 import { useStaticQuery, Link, graphql } from "gatsby"
 import Layout from "../components/Layout"
-import Header from "../components/Header"
+import Header from "../components/NewHeader"
 import ImportantInfoBlock from "../components/ImportantInfoBlock"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 export const Head = () => <title>Baza wiedzy | Spinel Hydraulika-Pneumatyka</title>
 
 const Post = ({ post }) => {
-  const desktop = getImage(post.featuredImage?.node?.desktop)
-  const mobile = getImage(post.featuredImage?.node?.mobile)
-  const isBrowser = typeof window !== "undefined"
+  const image = getImage(post.featuredImage?.node?.localFile)
   return (
-    <article className={`post${desktop ? " post--withImage" : ""}`}>
-      {desktop && (!isBrowser || window.innerWidth) > 700 && (
-        <GatsbyImage
-          image={desktop}
-          alt={post.featuredImage?.node?.altText || ``}
-        />
-      )}
-      {mobile && isBrowser && window.innerWidth <= 700 && (
-        <GatsbyImage
-          image={mobile}
-          alt={post.featuredImage?.node?.altText || ``}
-        />
-      )}
+    <article className={`post${image ? " post--withImage" : ""}`}>
+      <div className="post__image">
+        <Link to={`/blog/${post.slug}`}>
+        {image && (
+          <GatsbyImage
+            image={image}
+            alt={post.featuredImage?.node?.altText || ``}
+          />
+        )}
+        </Link>
+      </div>
       <div className="post__content">
         <h2 className="special">
           <Link
@@ -32,10 +28,6 @@ const Post = ({ post }) => {
             dangerouslySetInnerHTML={{ __html: post.title }}
           />
         </h2>
-        <div dangerouslySetInnerHTML={{ __html: post.excerpt }} />
-        <Link to={`/blog/${post.slug}`} className="read-more">
-          Czytaj dalej →
-        </Link>
       </div>
     </article>
   )
@@ -46,9 +38,11 @@ const BlogLayout = ({ posts }) => {
     <Layout>
       <Header siteTitle="Baza wiedzy" isFrontPage={false} />
       <ImportantInfoBlock />
-      {posts.map((post) => (
-        <Post post={post} />
-      ))}
+      <div className="articles">
+        {posts.map((post) => (
+          <Post post={post} key={post.id} />
+        ))}
+      </div>
     </Layout>
   )
 }
@@ -65,14 +59,9 @@ const Blog = (props) => {
           featuredImage {
             node {
               altText
-              desktop: localFile {
+              localFile {
                 childImageSharp {
-                  gatsbyImageData(width: 232, height: 232)
-                }
-              }
-              mobile: localFile {
-                childImageSharp {
-                  gatsbyImageData(width: 500, height: 150)
+                  gatsbyImageData(width: 80, height: 80)
                 }
               }
             }
