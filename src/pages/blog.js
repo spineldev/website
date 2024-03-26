@@ -5,7 +5,9 @@ import Header from "../components/NewHeader"
 import ImportantInfoBlock from "../components/ImportantInfoBlock"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
-export const Head = () => <title>Baza wiedzy | Spinel Hydraulika-Pneumatyka</title>
+export const Head = () => (
+  <title>Baza wiedzy | Spinel Hydraulika-Pneumatyka</title>
+)
 
 const Post = ({ post }) => {
   const image = getImage(post.featuredImage?.node?.localFile)
@@ -13,12 +15,12 @@ const Post = ({ post }) => {
     <article className={`post${image ? " post--withImage" : ""}`}>
       <div className="post__image">
         <Link to={`/blog/${post.slug}`}>
-        {image && (
-          <GatsbyImage
-            image={image}
-            alt={post.featuredImage?.node?.altText || ``}
-          />
-        )}
+          {image && (
+            <GatsbyImage
+              image={image}
+              alt={post.featuredImage?.node?.altText || ``}
+            />
+          )}
         </Link>
       </div>
       <div className="post__content">

@@ -14,10 +14,7 @@ const Header = ({ siteTitle }) => {
   `)
   const imageData = data.bg.childImageSharp.gatsbyImageData
   return (
-    <header
-      className="header header--new"
-      style={{ display: "grid" }}
-    >
+    <header className="header header--new" style={{ display: "grid" }}>
       <GatsbyImage
         style={{
           gridArea: "1/1",
