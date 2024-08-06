@@ -8,7 +8,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons"
 import { faClock } from "@fortawesome/free-regular-svg-icons"
 
-const specialHours = "1-5.05 - nieczynne"
+const specialHours = "15-16.08 - nieczynne"
 
 const TopBar = (props) => {
   return (
